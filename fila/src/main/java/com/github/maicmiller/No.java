@@ -1,11 +1,11 @@
 package com.github.maicmiller;
 
-public class No {
+public class No<T> {
 
-    private Object object; // Todos os objetos do java herda desse...
-    private No refNo; // referencia do nó.
+    private T object; // Todos os objetos do java herda desse...
+    private No<T> refNo; // referencia do nó.
 
-    public No(Object object) {
+    public No(T object) {
         this.refNo = null;
         this.object = object;
     }
@@ -13,7 +13,7 @@ public class No {
     public Object getObject() {
         return object;
     }
-    public void setObject(Object object) {
+    public void setObject(T object) {
         this.object = object;
     }
 
